@@ -1,5 +1,8 @@
 #!/bin/sh
 
-cd ~/temp/jenkins-test/
-git pull
-pip install -r requirements.txt
+ssh ibrahim@104.131.85.89 <<EOF
+	cd ~/temp/jenkins-test/
+	git pull
+	pip install -r requirements.txt
+	exit
+EOF
